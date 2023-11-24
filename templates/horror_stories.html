@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Children's Horror Stories</title>
+</head>
+<body>
+<h1>All Horror Stories</h1>
+<ul>
+{% for horror_story in horror_stories %}
+<li><a href="/horror_stories/{{ horror_story.id }}">{{ horror_story.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
