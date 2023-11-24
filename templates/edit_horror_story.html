@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Children's Horror Stories</title>
+</head>
+<body>
+<h1>Edit Horror Story</h1>
+<form action="/edit_horror_story/{{ horror_story.id }}" method="post">
+<label for="title">Title:</label><br>
+<input type="text" id="title" name="title" value="{{ horror_story.title }}"><br>
+<label for="content">Content:</label><br>
+<textarea id="content" name="content">{{ horror_story.content }}</textarea><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
